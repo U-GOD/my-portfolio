@@ -1,6 +1,10 @@
 import Navigation from './components/Navigation';
 import About from './components/About';
 import WorkExperience from './components/WorkExperience';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import CTAButtons from './components/CTAButtons';
 
 export default function Home() {
   return (
@@ -21,25 +25,14 @@ export default function Home() {
           </p>
         </div>
 
-        {/* CTA Buttons */}
-        <div className="flex justify-center gap-4 mb-20">
-          <button 
-            onClick={() => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-6 py-3 border-2 border-black dark:border-white rounded-lg font-medium hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300"
-          >
-            View My Work
-          </button>
-          <button 
-            onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-6 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-lg font-medium hover:border-black dark:hover:border-white transition-all duration-300"
-          >
-            Learn About Me
-          </button>
-        </div>
+        <CTAButtons />
       </section>
 
       <About />
       <WorkExperience />
+      <Skills />
+      <Projects />
+      <Contact />
     </main>
   );
 }
