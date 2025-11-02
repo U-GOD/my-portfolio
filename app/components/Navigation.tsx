@@ -5,11 +5,31 @@ import { useTheme } from '../context/ThemeContext';
 export default function Navigation() {
   const { isDark, toggleTheme } = useTheme();
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <nav className="flex justify-between items-center py-6 px-8 border-b border-gray-200 dark:border-gray-800">
-      <h1 className="text-xl font-bold font-mono">ADITYA</h1>
+    <nav className="flex justify-between items-center py-6 px-8 border-b border-gray-200 dark:border-gray-800 sticky top-0 bg-white dark:bg-black z-50 backdrop-blur-sm bg-white/80 dark:bg-black/80">
+      <h1 className="text-xl font-bold font-mono cursor-pointer" onClick={() => scrollToSection('hero')}>
+        ADITYA
+      </h1>
       
       <div className="flex items-center gap-6">
+        <button
+          onClick={() => scrollToSection('about')}
+          className="hidden md:block text-sm hover:text-gray-600 dark:hover:text-gray-400 transition-colors"
+        >
+          About
+        </button>
+        <button
+          onClick={() => scrollToSection('experience')}
+          className="hidden md:block text-sm hover:text-gray-600 dark:hover:text-gray-400 transition-colors"
+        >
+          Experience
+        </button>
+        
         <button
           onClick={toggleTheme}
           className="p-2 rounded-lg border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
