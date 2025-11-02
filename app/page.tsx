@@ -15,7 +15,7 @@ export default function Home() {
       <section id="hero" className="px-8 py-20 max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Hi, I'm <span className="bg-gradient-to-r from-black to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent">Aditya</span>
+            Hi, I'm <span className="bg-gradient-to-r from-black to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent">Fredrick</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8 font-mono">
             Web3 Developer with a Web2 day job

@@ -16,7 +16,7 @@ export default function Navigation() {
         onClick={() => scrollToSection('hero')}
         className="text-xl font-bold font-mono hover:opacity-70 transition-opacity"
       >
-        ADITYA
+        FREDRICK
       </button>
       
       <div className="flex items-center gap-6">

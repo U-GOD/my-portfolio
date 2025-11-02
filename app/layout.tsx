@@ -3,7 +3,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Aditya - Web3 Developer',
+  title: 'Fredrick - Web3 Developer',
   description: 'Smart Contract Developer building the decentralized future',
 };
 
